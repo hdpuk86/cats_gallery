@@ -1,13 +1,13 @@
 var app = function(){
 
   var catArray = [
-    {name: "Brian", favFood: "Cheese", imageURL: "https://www.millbryhill.co.uk/blog/wp-content/uploads/2012/09/halloween_costume_dog_black_cat.jpg"},
-    {name: "Kitty", favFood: "Mice", imageURL: "http://cdn.vashtie.com/blog/wp-content/uploads/2009/06/hello-kitty-hat1.jpg"},
-    {name: "Poppy", favFood: "Cat food", imageURL:"https://i.pinimg.com/originals/7d/88/13/7d881383dc98cf78ae12f2b7aa602316.jpg"},
-    {name: "Tom", favFood: "Kibble", imageURL:"https://i.pinimg.com/736x/ac/ca/8c/acca8cdbd15fd9f5f9079bccb27f5cdf--cat-hat-pug-dogs.jpg"},
-    {name: "Sookie", favFood: "Chicken", imageURL:"http://3.bp.blogspot.com/-KB3udSxzho0/To8qKvu3MZI/AAAAAAAAL10/PYNIGrsgxUo/s1600/cat.jpg"},
-    {name: "Tabby", favFood: "Felix", imageURL:"http://www.likecool.com/Gear/Pet/Halloween%20Chris%20Woebken%20dresses%20a%20dog%20up%20like%20a/Halloween-Chris-Woebken-dresses-a-dog-up-like-a.jpg"},
-    {name: "Fluffy", favFood: "Grass", imageURL:"http://www.petful.com/wp-content/uploads/2010/10/dog-dressed-as-cat-costume.png"}
+    {name: "Brian", favFood: "Cheese", imageURL: "images/cat1.jpeg"},
+    {name: "Kitty", favFood: "Mice", imageURL: "images/cat2.jpg"},
+    {name: "Poppy", favFood: "Cat food", imageURL: "images/cat3.jpg"},
+    {name: "Tom", favFood: "Kibble", imageURL:"images/cat4.jpg"},
+    {name: "Sookie", favFood: "Chicken", imageURL:"images/cat5.jpg"},
+    {name: "Tabby", favFood: "Felix", imageURL:"images/cat6.jpg"},
+    {name: "Fluffy", favFood: "Grass", imageURL:"images/cat7.png"}
   ]
 
   for(cat of catArray){
@@ -31,7 +31,8 @@ var createCatFavouriteFood = function(food){
 
 var createCatImage = function(imageURL){
   var image = document.createElement('li');
-  image.innerHTML = "<img width='500' src='" + imageURL + "' alt='cat image'/>"
+  image.classList.add("catImage");
+  image.innerHTML = "<img src='" + imageURL + "' alt='cat image'/>"
   return image;
 }
 

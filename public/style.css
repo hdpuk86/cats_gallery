@@ -1,8 +1,33 @@
-.logo {
-  width: 50px;
-  height: 50px;
+body {
+  text-align: center;
+  font-family: monospace;
+  background-color: black;
 }
 
-.red-quote{
-  color: red;
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#cats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 24px;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 40px;
+}
+
+img {
+  width: 300px;
+  margin-top: 40px;
 }
